@@ -1,0 +1,155 @@
+/* Basic Reset */
+
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "San Francisco";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+.vibely-app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DB954; /* Spotify green */
+    margin-bottom: 20px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.playlist-section {
+    margin-top: 20px;
+}
+
+.playlist-item {
+    padding: 5px 0;
+    color: #b3b3b3;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.install-app {
+    margin-top: auto;
+    font-size: 14px;
+    color: #1DB954;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #181818;
+}
+
+.content-header {
+    display: flex;
+    justify-content: left;
+    width: 340px;
+    background-color: #000000;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+.search-bar {
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+/* Player Controls */
+.player-controls {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.track-info, .playback-controls, .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.album-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.track-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-name, .track-artist {
+    font-size: 14px;
+}
+
+.volume-slider {
+    width: 100px;
+    accent-color: #1DB954; /* Green color for volume slider */
+}
+
+.search-button{
+    display: flex;
+    align-items: center;
+}
+
+.search-button:hover{
+    cursor: pointer;
+}

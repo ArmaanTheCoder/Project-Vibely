@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibely</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vibely-app">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="logo">Vibely</div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">Search</li>
+                    <li class="nav-item">Your Library</li>
+                </ul>
+            </nav>
+            <div class="playlist-section">
+                <h3>Your Playlists</h3>
+                <!-- Additional items as needed -->
+            </div>
+            <div class="install-app">Install App</div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <header class="content-header">
+                <input type="text" class="search-bar" placeholder="Search for Artists, Songs, or Podcasts">
+                <div class="search-button">
+                    <img src="assets/search_24dp_E8EAED_FILL0_wght400_GRAD200_opsz24.svg" alt="">
+                </div>
+            </header>
+            <section class="content-display">
+                <!-- Content for Albums, Playlists, etc. -->
+            </section>
+        </div>
+
+        <!-- Player Controls -->
+        <div class="player-controls">
+            <div class="track-info" id="track-info" style="display: none;">
+                <img src="album-cover.jpg" alt="Album Cover" class="album-cover">
+                <div class="track-details">
+                    <span class="track-name">Track Name</span>
+                    <span class="track-artist">Artist Name</span>
+                </div>
+            </div>
+            <div class="playback-controls">
+                <img src="assets/arrow_back_ios_new_24dp_E8EAED_FILL0_wght400_GRAD200_opsz24.svg" alt="">
+                <img src="assets/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD200_opsz24.svg" alt="">
+                <img src="assets/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD200_opsz24.svg" alt="">
+            </div>
+            <div class="volume-control">
+                <input type="range" class="volume-slider" id="volume-slider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
